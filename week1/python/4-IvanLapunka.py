@@ -13,7 +13,6 @@ class Solution:
                 self.changeCell(matrix, i, j)
 
     def changeCell(self, matrix, i, j):
-        tmp1, tmp2 = 0, 0
         tmp1 = matrix[self.genNextRow(0, i, j)][self.genNextCol(0, i, j)]
         for ind in range(0, 5):
             tmp2 = tmp1
