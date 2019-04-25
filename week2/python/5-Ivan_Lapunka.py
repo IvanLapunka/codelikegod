@@ -31,25 +31,22 @@ class Solution:
         for i in range(1, len(matrix)):
             if matrix[i][0] == 0:
                 for k in range(len(matrix[0])):
-                    matrix[i][k] =0
+                    matrix[i][k] = 0
 
         for j in range(1, len(matrix[0])):
             if matrix[0][j] == 0:
                 for k in range(len(matrix)):
-                    matrix[k][j] =0
+                    matrix[k][j] = 0
 
         if south:
             for j in range(len(matrix[0])):
                 matrix[len(matrix) - 1][j] = 0
-
         if north:
             for j in range(len(matrix[0])):
                 matrix[0][j] = 0
-
         if west:
             for i in range(len(matrix)):
                 matrix[i][0] = 0
-
         if east:
             for i in range(len(matrix)):
                 matrix[i][len(matrix[0]) - 1] = 0
