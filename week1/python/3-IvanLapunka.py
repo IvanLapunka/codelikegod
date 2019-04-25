@@ -6,7 +6,6 @@ class Solution:
         curr = chars[0]
         first = 0
         start = 0
-        buf = 0
         for i in range(len(chars)):
             if chars[i] == curr:
                 count += 1
