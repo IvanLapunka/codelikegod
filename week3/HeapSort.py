@@ -50,14 +50,3 @@ class Solution:
             tmp = self.delete()
             self.mas[self.heapSize] = tmp
         return self.mas
-
-
-
-
-s = Solution()
-
-
-mas = [5,1,1,2,0,0,7, 4, 6, 3, 5, 3, 8, 9, 4, 3, 2, 1]
-mas1 = [5,1,1,2,0,0,7, 4, 6, 3, 5, 3, 8, 9, 4, 3, 2, 1]
-print(*s.sortArray(mas))
-print("finished")
