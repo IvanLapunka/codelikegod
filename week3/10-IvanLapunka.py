@@ -37,23 +37,6 @@ class Trie:
 
 trie = Trie()
 
-# trie.insert("jam")
-# print(trie.search("apple"))
-# print(trie.search("app"))
-# print(trie.startsWith("appl"))
-# trie.insert("app")
-# trie.search("app")
-
-
-# Your Trie object will be instantiated and called as such:
-# obj = Trie()
-# obj.insert(word)
-# param_2 = obj.search(word)
-# param_3 = obj.startsWith(prefix)
-lst1 = ["insert","insert","insert","insert","insert","insert","search","search","search","search","search","search","search","search","search","startsWith","startsWith","startsWith","startsWith","startsWith","startsWith","startsWith","startsWith","startsWith"]
-
-args = [["app"],["apple"],["beer"],["add"],["jam"],["rental"],["apps"],["app"],["ad"],["applepie"],["rest"],["jan"],["rent"],["beer"],["jam"],["apps"],["app"],["ad"],["applepie"],["rest"],["jan"],["rent"],["beer"],["jam"]]
-
 def test(command, args, trie):
     for i in range(len(command)):
         if command[i] == "insert":
@@ -63,8 +46,6 @@ def test(command, args, trie):
             print(trie.search(args[i][0]))
         elif command[i] == "startsWith":
             print(trie.startsWith(args[i][0]))
-
-# test(lst1, args, trie)
 
 commands2 = ["insert","search","search","search","startsWith","startsWith","startsWith"]
 args2 = [["hello"],["hell"],["helloa"],["hello"],["hell"],["helloa"],["hello"]]
