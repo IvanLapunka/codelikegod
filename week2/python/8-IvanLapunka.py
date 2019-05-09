@@ -1,5 +1,4 @@
 class Solution:
-    found = False
 
     def searchMatrix(self, matrix, target):
         self.found = False
