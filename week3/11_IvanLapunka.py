@@ -1,5 +1,14 @@
 class Solution:
+    '''
+    815. Bus Routes, https://leetcode.com/problems/bus-routes/
+    We have a list of bus routes. Each routes[i] is a bus route that the i-th bus repeats forever.
+    For example if routes[0] = [1, 5, 7], this means that the first bus (0-th indexed) travels in
+    the sequence 1->5->7->1->5->7->1->... forever.
 
+    We start at bus stop S (initially not on a bus), and we want to go to bus stop T.
+    Travelling by buses only, what is the least number of buses we must take to reach
+    our destination? Return -1 if it is not possible.
+    '''
     def wideSearch(self, routes, S, T):
         distance = 1
         last = -1
@@ -33,16 +42,4 @@ class Solution:
                     self.stops[stop] = set()
                 self.stops[stop].add(route)
         return self.wideSearch(routes, S, T)
-
-
-
-
-
-
-s = Solution()
-routes4 = [[7,12],[4,5,15],[6],[15,19],[9,12,13]]
-S = 15
-T = 12
-
-print(s.numBusesToDestination(routes4, S, T))
 
